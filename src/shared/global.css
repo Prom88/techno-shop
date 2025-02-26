@@ -1,0 +1,63 @@
+body {
+	background-color: #ffffff;
+
+	overflow: hidden;
+	color: #252525;
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+footer,
+header,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+input,
+p,
+div {
+	box-sizing: border-box;
+}
+
+input {
+	outline: none;
+}
+
+input[type='button'] {
+	cursor: pointer;
+}
+
+body {
+	line-height: 1;
+}
+
+button {
+	background: transparent;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+button,
+a,
+img {
+	cursor: pointer;
+}
