@@ -1,3 +1,4 @@
+'use client'
 import { ItemCard } from '@/widgets/item-card'
 
 import { Container } from './styled'

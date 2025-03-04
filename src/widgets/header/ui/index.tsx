@@ -1,3 +1,4 @@
+'use client'
 import { Button, HeaderContainer, Logo, NavMenu, Phone } from './styled'
 
 export const Header = () => {

@@ -1,4 +1,5 @@
 'use client'
+import { Footer } from '@/widgets/Footer'
 import { Header } from '@/widgets/header'
 import { ItemsLayout } from '../components/ItemsLayout'
 
@@ -40,6 +41,7 @@ export const Main = () => {
 		<div>
 			<Header />
 			<ItemsLayout items={items} />
+			<Footer />
 		</div>
 	)
 }
