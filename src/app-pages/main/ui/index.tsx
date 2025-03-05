@@ -1,7 +1,9 @@
 'use client'
+import bg from '@/shared/bg15.svg'
 import { Footer } from '@/widgets/Footer'
 import { Header } from '@/widgets/header'
 import { ItemsLayout } from '../components/ItemsLayout'
+import { Background, Container } from './styled'
 
 export const Main = () => {
 	const items = [
@@ -40,6 +42,9 @@ export const Main = () => {
 	return (
 		<div>
 			<Header />
+			<Container>
+				<Background src={bg} alt='background' width={window.innerWidth} />
+			</Container>
 			<ItemsLayout items={items} />
 			<Footer />
 		</div>

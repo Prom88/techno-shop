@@ -15,7 +15,12 @@ export const ItemCard = ({ id, title, price }: TItem) => {
 		<Card id={id}>
 			<Image src={image} alt='/' height={256} width={187} />
 			<Title>{title}</Title>
-			<Price>{price}</Price>
+			<Price>
+				{Intl.NumberFormat('ru-RU', {
+					style: 'currency',
+					currency: 'RUB',
+				}).format(price)}
+			</Price>
 			<div
 				style={{
 					display: 'flex',
