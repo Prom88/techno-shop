@@ -20,6 +20,15 @@ export const Container = styled.div`
 	display: grid;
 	grid-template-columns: repeat(4, 0fr);
 	gap: 27px;
-
 	width: fit-content;
+
+	@media (max-width: 1200px) {
+		grid-template-columns: repeat(3, 0fr);
+	}
+	@media (max-width: 890px) {
+		grid-template-columns: repeat(2, 0fr);
+	}
+	@media (max-width: 570px) {
+		grid-template-columns: repeat(1, 0fr);
+	}
 `

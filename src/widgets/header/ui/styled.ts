@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
 `
 
 export const NavMenu = styled.nav`
-	padding: 0 100px;
+	padding: 0 7%;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -35,4 +35,7 @@ export const Phone = styled.a`
 	font-family: ${baseTheme.fonts.inter};
 	font-size: 20px;
 	font-weight: 200;
+	@media (max-width: 1000px) {
+		display: none;
+	}
 `
