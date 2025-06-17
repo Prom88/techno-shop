@@ -7,7 +7,7 @@ import type { TItem } from '@/widgets/item-card'
 
 export const ItemsLayout = ({ items }: { items: TItem[] }) => {
 	return (
-		<Section>
+		<Section id='models'>
 			<h1>Модели</h1>
 			<Container>
 				{items.map((item) => (

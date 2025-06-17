@@ -21,7 +21,7 @@ export const Container = styled.div`
 	grid-template-columns: repeat(4, 0fr);
 	gap: 27px;
 	width: fit-content;
-
+	margin-bottom: 90px;
 	@media (max-width: 1200px) {
 		grid-template-columns: repeat(3, 0fr);
 	}

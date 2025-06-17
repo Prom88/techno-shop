@@ -32,3 +32,18 @@ export const Price = styled.span`
 	font-style: normal;
 	font-weight: 300;
 `
+
+export const StyledButton = styled.button`
+	background: none;
+	border-radius: 20px;
+	font-family: ${baseTheme.fonts.openSans};
+	height: 44px;
+	font-weight: 200;
+
+	border: 2px dashed #ffc900;
+	width: 114px;
+	color: black;
+	&:hover {
+		border: 1px solid ${baseTheme.colors.yellow};
+	}
+`

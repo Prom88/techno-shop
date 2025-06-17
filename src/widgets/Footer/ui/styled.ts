@@ -7,12 +7,12 @@ export const StyledFooter = styled.footer`
 	max-width: 100%;
 	height: 470px;
 	background-color: ${baseTheme.colors.black};
-	margin-top: 90px;
-	padding: 0 150px;
+	margin-top: 0px;
 	display: flex;
 	align-items: center;
 `
 export const Container = styled.section`
+	margin-left: 160px;
 	height: fit-content;
 	color: ${baseTheme.colors.white};
 
@@ -27,6 +27,9 @@ export const Container = styled.section`
 		font-family: ${baseTheme.fonts.montserrat};
 		font-size: 28px;
 		font-weight: 600;
+	}
+	@media (max-width: 870px) {
+		margin: 10px;
 	}
 `
 

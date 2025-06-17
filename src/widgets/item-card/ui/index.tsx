@@ -2,7 +2,8 @@
 import image from '@/shared/image.png'
 import { Button } from '@/widgets/Button'
 import Image from 'next/image'
-import { Card, Price, Title } from './styled'
+import Link from 'next/link'
+import { Card, Price, StyledButton, Title } from './styled'
 
 export type TItem = {
 	id: string
@@ -33,10 +34,9 @@ export const ItemCard = ({ id, title, price }: TItem) => {
 					style={{ background: '#f5f5f5', width: '114px' }}
 					title='В корзину'
 				/>
-				<Button
-					style={{ border: '2px dashed #FFC900', width: '114px' }}
-					title='Подробнее'
-				/>
+				<Link href='/details'>
+					<StyledButton>Подробнее</StyledButton>
+				</Link>
 			</div>
 		</Card>
 	)

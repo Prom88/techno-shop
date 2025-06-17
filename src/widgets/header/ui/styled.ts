@@ -30,7 +30,16 @@ export const Button = styled.button`
 	font-family: ${baseTheme.fonts.inter};
 	font-size: 20px;
 	font-weight: 200;
+	@media (max-width: 700px) {
+		display: none;
+	}
 `
+export const NavMenuButton = styled.div`
+	@media (min-width: 700px) {
+		display: none;
+	}
+`
+
 export const Phone = styled.a`
 	font-family: ${baseTheme.fonts.inter};
 	font-size: 20px;

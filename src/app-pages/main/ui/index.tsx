@@ -1,9 +1,12 @@
 'use client'
 import bg from '@/shared/bg15.svg'
+import cart from '@/shared/cart.svg'
 import { Footer } from '@/widgets/Footer'
 import { Header } from '@/widgets/header'
+import Image from 'next/image'
+import Link from 'next/link'
 import { ItemsLayout } from '../components/ItemsLayout'
-import { Background, Container } from './styled'
+import { Background, Cart, Container } from './styled'
 
 export const Main = () => {
 	const items = [
@@ -42,6 +45,17 @@ export const Main = () => {
 	return (
 		<div>
 			<Header />
+			<Link href='/cart'>
+				<Cart>
+					<Image
+						src={cart}
+						alt='cart'
+						height={44}
+						width={44}
+						style={{ marginLeft: '-10px' }}
+					/>
+				</Cart>
+			</Link>
 			<Container>
 				<Background src={bg} alt='background' width={window.innerWidth} />
 			</Container>

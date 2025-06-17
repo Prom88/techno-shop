@@ -1,8 +1,9 @@
+'use client'
 import { Container, Line, StyledFooter } from './styled'
 
 export const Footer = () => {
 	return (
-		<StyledFooter>
+		<StyledFooter id='questions'>
 			<Container>
 				<h1>Частые вопросы</h1>
 				<Line />
