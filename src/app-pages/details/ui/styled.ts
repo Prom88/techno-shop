@@ -172,10 +172,50 @@ export const Cart = styled.div`
 	align-items: center;
 	justify-content: center;
 	filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+	@media (max-width: 700px) {
+		display: none;
+	}
 `
 export const Article = styled.h2`
 	font-family: ${baseTheme.fonts.inter};
 	font-size: 18px;
 	font-weight: lighter;
 	color: ${baseTheme.colors.darkGrey};
+`
+
+export const MobileNameBox = styled.div`
+	width: 100%;
+	min-height: 190px;
+	border-radius: 21px 21px 0 0;
+	box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	bottom: 0px;
+	background-color: ${baseTheme.colors.white};
+	padding: 11px 7px;
+
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
+
+	& > h1 {
+		font-family: ${baseTheme.fonts.montserrat};
+		font-size: 28px;
+		font-weight: bold;
+	}
+	& > h2 {
+		font-family: ${baseTheme.fonts.montserrat};
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	& > h3 {
+		font-family: ${baseTheme.fonts.openSans};
+		font-size: 18px;
+		font-weight: lighter;
+		color: ${baseTheme.colors.darkGrey};
+	}
+
+	@media (min-width: 1010px) {
+		display: none;
+	}
 `

@@ -22,6 +22,7 @@ import {
 	ImageBox,
 	ImageSelector,
 	Line,
+	MobileNameBox,
 	NameBox,
 	NavLink,
 	PhoneBox,
@@ -110,6 +111,30 @@ export const Details = () => {
 					</NameBox>
 				</PhoneBox>
 			</Container>
+
+			<MobileNameBox>
+				<h1>Смартфон Apple iPhone 11 128Gb Green</h1>
+				<h3>Артикул 123456789</h3>
+				<h2>59 900 руб.</h2>
+				<ButtonsBox style={{}}>
+					<Counter>
+						<button onClick={() => decreace()}>-</button>
+						{count}
+						<button onClick={() => increace()}>+</button>
+					</Counter>
+					<Button
+						title='Добавить'
+						style={{
+							background: '#252525',
+							color: '#ffffff',
+							fontFamily: `${baseTheme.fonts.montserrat}`,
+							fontWeight: 'bolder',
+							width: '50%',
+							height: '33px',
+						}}
+					/>
+				</ButtonsBox>
+			</MobileNameBox>
 
 			<Footer />
 		</div>

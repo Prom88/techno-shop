@@ -3,15 +3,16 @@ import baseTheme from '@/shared/theme'
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-	min-width: 100%;
+	width: 100%;
 	height: 67px;
 	background-color: ${baseTheme.colors.yellow};
 	display: flex;
+	justify-content: center;
+	align-items: center;
 `
 
 export const NavMenu = styled.nav`
-	padding: 0 7%;
-	width: 100%;
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -46,5 +47,26 @@ export const Phone = styled.a`
 	font-weight: 200;
 	@media (max-width: 1000px) {
 		display: none;
+	}
+`
+export const MobileMenu = styled.div`
+	width: 100%;
+	height: fit-content;
+	background-color: ${baseTheme.colors.yellow};
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+`
+
+export const MobileMenuButton = styled.button`
+	height: 50px;
+	width: 100%;
+	color: ${baseTheme.colors.white};
+	font-family: ${baseTheme.fonts.montserrat};
+	font-size: 20px;
+	font-weight: 500;
+	&:hover {
+		background-color: ${baseTheme.colors.white};
+		color: ${baseTheme.colors.yellow};
 	}
 `
